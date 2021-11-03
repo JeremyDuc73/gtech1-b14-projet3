@@ -1,0 +1,77 @@
+:root {
+  --col:#242621; /* couleur dominante: gris */
+  --bg:#222222;  /* couleur fond noir */
+}
+
+header{
+  background-color: black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header img{
+  width: 200px;
+  height: 200px;
+}
+
+h1 img{
+  width: auto;
+  height: auto;
+}
+
+nav img{
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content:center;
+}
+#menu li {
+ background-color:white;
+ float: left;
+ }
+#menu ul ul li a {
+ display:block;
+ width:auto;
+ color: #2E3139;
+ text-decoration:none;
+ padding:40px 80px;
+ }
+#menu li:hover{
+  background-color:white;
+}
+
+#menu ul ul li a:hover {
+  background-color: black;
+  color:white;
+ }
+ #menu ul li ul {
+  display:none;
+  }
+#menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+ #menu li ul {
+ position:absolute;
+ }
+
+body{
+  background-color: var(--bg);
+  margin: 0px;
+}
