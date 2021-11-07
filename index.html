@@ -13,21 +13,106 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="author" content="Bielski Aleksi, Caroumbin Hugo and Duc Jeremy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav id="menu">
-        <ul>
-          <li><a href="#"><img src="images/logo-nav-menu.png" alt="Navigation menu logo"></a>
+      <div class="ubi">
+        <img src="images/ubi_logo.png" alt="ubisoft Logo">
+      </div>
+      <div class="header">
+        <nav class="menu">
           <ul>
-            <li><a href="#intro">INTRODUCTION</a></li>
-            <li><a href="#rules">RULES</a></li>
-            <li><a href="#description">DESCRIPTION</a></li>
+            <li><a href="#"><img src="images/logo-nav-menu.png" alt="Navigation menu logo"></a>
+            <ul>
+              <li><a href="#ancre_intro">INTRODUCTION</a></li>
+              <li><a href="#ancre_rules">RULES</a></li>
+              <li><a href="#ancre_description">DESCRIPTION</a></li>
+              <li><a href="https://www.ubisoft.com/fr-fr/game/rainbow-six/siege" target="_blank">OFFICIAL WEBSITE</a></li>
+            </ul>
           </ul>
-        </ul>
-      </nav>
-      <h1><img src="images/R6S-title.png" alt="Titre du site"></h1>
-      <img src="images/logo-r6s.png" alt="Rainbow Six Siege© logo">
+        </nav>
+        <h1><img src="images/R6S-title.png" alt="Titre du site">information website</h1>
+        <img src="images/logo-r6s.png" alt="Rainbow Six Siege© logo">
+      </div>
     </header>
+    <div class="ancre_intro"></div>
+    <div class="intro">
+      <h2>WHAT IS RAINBOW SIX SIEGE ?</h2>
+      <hr>
+      <p>
+        Rainbow Six: Siege is a tactical shooter where the player takes on the role of various agents from several special forces units and task forces that make up the Rainbow Team. Like the other titles in the series, it focuses heavily on team play and the "realism" of operations.
+        <br><br>
+        However, there are major differences from earlier versions of the game, with a strong multiplayer focus and fully destructible environments. A total of 10 maps, the American SWAT, the British SAS, the German GSG 9, the Russian Spetsnaz and the French GIGN are available at the time of release. Currently, 24 intervention units and 21 maps are available in Tom Clancy's Rainbow Six: Siege.
+        <br><br>
+        For the first time in a Tom Clancy's Rainbow Six game, players conduct a new style of attack where enemies can turn their environment into modern fortresses to keep the advantage over Rainbow Six teams that assault to break their position. The game system encourages players to fortify their position, by reinforcing walls, placing barbed wire to slow down their enemies, regularly watching the cameras, deploying mines and shields, or, to break through enemy defences, using observation drones or rappelling.
+        <br><br>
+        All operators (defenders or attackers) have their own unique skills (represented by a specific weapon or gadget) and abilities (speed and protection). They also have weapons related to their unit of intervention, or more specific to the agent.
+      </p>
+      <hr>
+    </div>
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+              class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+              class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+              class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+              class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+              class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4"
+              class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+              class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+              class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+              class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+              class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+              class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+              class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
   </body>
 </html>
