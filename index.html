@@ -38,7 +38,7 @@
         <img src="images/logo-r6s.png" alt="Rainbow Six Siege© logo">
       </div>
     </header>
-    <div class="ancre_intro"></div>
+    <div id="ancre_intro"></div>
     <div class="intro">
       <h2>WHAT IS RAINBOW SIX SIEGE ?</h2>
       <hr>
@@ -53,66 +53,98 @@
       </p>
       <hr>
     </div>
-    <section class="carousel" aria-label="Gallery">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide4"
-              class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2"
-              class="carousel__next">Go to next slide</a>
+    <div class="first-inter-part">
+      <div class='diapo_auto_rwd'>
+        <ul>
+          <li class='image1 slide_diapo'>
+            <div class="set-img">
+              <img src='images/1.png' alt>
+            </div>
+          </li>
+          <li class='image2 slide_diapo'>
+            <div class="set-img">
+              <img src='images/2.jpg' alt>
+            </div>
+          </li>
+          <li class='image3 slide_diapo'>
+            <div class="set-img">
+              <img src='images/3.jpg' alt>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="container_footer">
+        <aside class="links">
+          <h3>OUR LINKS</h3>
+          <div class="container_all">
+            <div class="hugo">
+              <h4>Hugo Caroumbin</h4>
+              <ul class="container_links">
+                <li><img src="images/discord.png" alt="Discord Logo"></li>
+                <li><p>Ratonfuté#9838</p></li>
+              </ul>
+              <ul class="container_links">
+                <li><img src="images/gmail.png" alt="Gmail Logo"></li>
+                <li><p>hcaroumbin@gaming.tech</p></li>
+              </ul>
+            </div>
+            <hr>
+            <div class="aleksi">
+              <h4>Aleksi Bielski</h4>
+              <ul class="container_links">
+                <li><img src="images/discord.png" alt="Discord Logo"></li>
+                <li><p>aleksi#2230</p></li>
+              </ul>
+              <ul class="container_links">
+                <li><img src="images/gmail.png" alt="Gmail Logo"></li>
+                <li><p>abielski@gaming.tech</p></li>
+              </ul>
+              <ul class="container_links">
+                <li><a href="https://www.instagram.com/aleksi570/" target="_blank"><img src="images/insta.png" alt="Instagram Logo"></a></li>
+                <li><p>@aleksi570</p></li>
+              </ul>
+            </div>
+            <hr>
+            <div class="jeremy">
+              <h4>Jérémy Duc</h4>
+              <ul class="container_links">
+                <li><img src="images/discord.png" alt="Discord Logo"></li>
+                <li><p>Nashoba#0001</p></li>
+              </ul>
+              <ul class="container_links">
+                <li><img src="images/gmail.png" alt="Discord Logo"></li>
+                <li><p>jduc@gaming.tech</p></li>
+              </ul>
+              <ul class="container_links">
+                <li><a href="https://www.instagram.com/jeremy.duc/" target="_blank"><img src="images/insta.png" alt="Discord Logo"></a></li>
+                <li><p>@jeremy.duc</p></li>
+              </ul>
+            </div>
           </div>
-        </li>
-        <li id="carousel__slide2"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide3"
-              class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide3"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide4"
-              class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide4"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide1"
-              class="carousel__next">Go to first slide</a>
-        </li>
-      </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1"
-              class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2"
-              class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3"
-              class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4"
-              class="carousel__navigation-button">Go to slide 4</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
+        </aside>
+        <div class="contact">
+          <h3>Contact us</h3>
+          <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your first name" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" required><br>
+            <label for="mail">Mail address:</label><br>
+            <input type="email" id="mail" placeholder="example@gmail.com" required><br>
+            <label for="message">Your Message:</label><br>
+            <textarea name="text" rows="8" cols="50" placeholder="Type here" required minlength="50" maxlength="3000"></textarea><br>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2015 Ubisoft Entertainment. All Rights Reserved. Tom Clancy’s, Rainbow Six, The Soldier Icon, Ubisoft and the Ubisoft logo are registered or unregistered trademarks of Ubisoft Entertainment in the U.S. and/or other countries. Microsoft, the Xbox Sphere mark, the Series X logo, Series S logo, Series X|S logo, Xbox One, Xbox Series X, Xbox Series S, and Xbox Series X|S are trademarks of the Microsoft group of companies. “PlayStation LOGO”, “PlayStation”, “PS5 LOGO” and “PS4 LOGO” are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+        </p>
+        <img src="images/pegi18.png" alt="Pegi 18">
+      </div>
+    </footer>
   </body>
 </html>
