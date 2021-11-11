@@ -1,7 +1,7 @@
 :root {
-  --col:#242621; /* main color: gray */
+  --gray:#D4D4D4; /* lightgray */
   --bg:#222222;  /* bg black */
-  --blue:#1c68fb;
+  --blue:#1c68fb; /* blue in the website */
 }
 
 html{
@@ -9,7 +9,6 @@ html{
 }
 
 body{
-  background: rgb(75,75,75);
   background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(34,34,34,1) 25%, rgba(34,34,34,1) 50%, rgba(34,34,34,1) 75%, rgba(75,75,75,1) 100%);
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
@@ -17,9 +16,7 @@ body{
 
 
 .ubi{
-  background: rgb(212,212,212);
   background: radial-gradient(circle, rgba(212,212,212,1) 0%, rgba(36,38,33,1) 100%);
-  border-bottom: 5px;
   border-bottom: solid;
   border-color: var(--bg);
   height: 50px;
@@ -41,7 +38,6 @@ header{
 
 
 .header{
-  background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(57,57,57,1) 59%, rgba(190,190,190,1) 100%);
   display: flex;
   text-align: center;
@@ -114,7 +110,6 @@ nav img{
  color: white;
  text-decoration:none;
  padding:30px 60px;
- font-family: "Bebas Neue", sans-serif;
  font-size: 150%;
 }
 
@@ -169,8 +164,7 @@ nav img{
 }
 
 .intro h2{
-  color: #D4D4D4;
-  border: 1px;
+  color: var(--gray);
   border: solid;
   border-color: var(--blue);
   padding: 5px;
@@ -180,9 +174,8 @@ nav img{
 .intro p{
   width: 1180px;
   font-size: 120%;
-  background: rgb(28,104,251);
   background: linear-gradient(0deg, rgba(28,104,251,1) 0%, rgba(212,212,212,1) 100%);
-  color: var(--col);
+  color: #242621;
   padding: 10px;
   line-height: 130%;
 }
@@ -261,8 +254,7 @@ ul .slide_diapo.image3{
 
 
 .rules h2{
-  color: #D4D4D4;
-  border: 1px;
+  color: var(--gray);
   border: solid;
   border-color: var(--blue);
   margin-left: auto;
@@ -281,17 +273,15 @@ ul .slide_diapo.image3{
 }
 
 .two_team p{
-  color: #D4D4D4;
+  color: var(--gray);
   text-align: center;
   width: 460px;
   font-size: 25px;
-  font-family: 'Bebas Neue';
   text-shadow: 0px 0px 3px #000000;
 }
 
 .rules{
   margin-top: 100px;
-  background: rgb(75,75,75);
   background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(34,34,34,1) 25%, rgba(34,34,34,1) 50%, rgba(34,34,34,1) 75%, rgba(75,75,75,1) 100%);
 }
 
@@ -325,7 +315,6 @@ ul .slide_diapo.image3{
   margin-top: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: rgb(246,36,37);
   background: radial-gradient(circle, rgba(246,36,37,1) 0%, rgba(152,0,1,1) 100%);
 }
 
@@ -333,7 +322,7 @@ ul .slide_diapo.image3{
   width: 3px;
   height: 800px;
   margin: 0;
-  background-color: #D4D4D4;
+  background-color: var(--gray);
 }
 
 .defenders h3{
@@ -342,7 +331,6 @@ ul .slide_diapo.image3{
   margin-top: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: rgb(8,117,202);
   background: radial-gradient(circle, rgba(8,117,202,1) 0%, rgba(0,75,133,0.5) 100%);
 }
 
@@ -391,7 +379,7 @@ ul .slide_diapo.image3{
   background-color: var(--blue);
   width: 500px;
   padding: 5px;
-  color: #D4D4D4;
+  color: var(--gray);
   margin-left: auto;
   text-align: center;
   margin-right: auto;
@@ -401,7 +389,7 @@ ul .slide_diapo.image3{
 
 .r6_season h4{
   padding: 5px;
-  color: #D4D4D4;
+  color: var(--gray);
   margin-left: auto;
   text-align: center;
   margin-right: auto;
@@ -435,7 +423,6 @@ ul .slide_diapo.image3{
 
 
 footer{
-  background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(57,57,57,1) 59%, rgba(190,190,190,1) 100%);
   text-align: center;
   align-items: center;
@@ -453,7 +440,6 @@ footer hr{
 }
 
 footer h3{
-  border: 1px;
   border: solid;
   border-color: var(--blue);
   padding: 5px;
@@ -464,7 +450,6 @@ footer h3{
 }
 
 footer h4{
-  border: 1px;
   border: solid;
   border-color: var(--blue);
   padding: 5px;
@@ -543,7 +528,6 @@ footer form input{
   background-color: var(--blue);
   width: 100px;
   height: 50px;
-  font-family: "Bebas Neue", sans-serif;
   font-size: 120%;
   letter-spacing: 2px;
 }
