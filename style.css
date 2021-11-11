@@ -9,7 +9,7 @@ html{
 }
 
 body{
-  background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(34,34,34,1) 25%, rgba(34,34,34,1) 50%, rgba(34,34,34,1) 75%, rgba(75,75,75,1) 100%);
+  background-image: url("images/background.jpg");
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -31,14 +31,15 @@ header{
   position: sticky;
   top: -55px;
   height: 200px;
-  z-index: 1;
+  z-index: 5;
 }
 
 
 
 
 .header{
-  background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(57,57,57,1) 59%, rgba(190,190,190,1) 100%);
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(57,57,57,1) 59%, rgba(190,190,190,1) 100%); */
+  background: linear-gradient(0deg, rgba(34,34,34,1) 29%, rgba(117,117,117,1) 100%);
   display: flex;
   text-align: center;
   align-items: center;
@@ -174,8 +175,8 @@ nav img{
 .intro p{
   width: 1180px;
   font-size: 120%;
-  background: linear-gradient(0deg, rgba(28,104,251,1) 0%, rgba(212,212,212,1) 100%);
-  color: #242621;
+  background: linear-gradient(0deg, rgba(28,104,251,0.6) 0%, rgba(67,92,140,0.6) 100%);
+  color: var(--gray);
   padding: 10px;
   line-height: 130%;
 }
@@ -282,7 +283,6 @@ ul .slide_diapo.image3{
 
 .rules{
   margin-top: 100px;
-  background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(34,34,34,1) 25%, rgba(34,34,34,1) 50%, rgba(34,34,34,1) 75%, rgba(75,75,75,1) 100%);
 }
 
 .rules img{
@@ -291,7 +291,6 @@ ul .slide_diapo.image3{
 }
 
 .rules_title{
-  background: #11192c;
   width:1200px;
   margin-left: auto;
   margin-right: auto;
@@ -300,7 +299,6 @@ ul .slide_diapo.image3{
 }
 
 .two_team{
-  background-color: rgb(18,25,44,1);
   display: flex;
   justify-content: space-around;
   margin-left: auto;
@@ -322,6 +320,7 @@ ul .slide_diapo.image3{
   width: 3px;
   height: 800px;
   margin: 0;
+  margin-bottom: 150px;
   background-color: var(--gray);
 }
 
@@ -334,16 +333,6 @@ ul .slide_diapo.image3{
   background: radial-gradient(circle, rgba(8,117,202,1) 0%, rgba(0,75,133,0.5) 100%);
 }
 
-.transition{
-  margin-left:auto;
-  margin-right:auto;
-  width: 1200px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background: rgb(18,25,44);
-  background: linear-gradient(0deg, rgba(18,25,44,1) 0%, rgba(11,15,27,1) 40%, rgba(11,15,27,1) 60%, rgba(18,25,44,1) 100%);
-}
-
 .video_trailer{
   display: flex;
   justify-content: center;
@@ -351,13 +340,428 @@ ul .slide_diapo.image3{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
-  background: rgb(18,25,44,1);
 }
+
+
+
+
+
+
+.inter-part h2{
+  color: var(--gray);
+  border: solid;
+  border-color: var(--blue);
+  padding: 5px;
+  font-size: 300%;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.profil{
+  width: 160px;
+  height: 200px;
+}
+
+.diapo_character{
+  position:relative;
+  margin: 0 auto;
+  background-color: grey;
+  max-width:800px;
+  height: 200px;
+  overflow:hidden;
+  transition:2s;
+}
+
+.inter-part:focus-within .diapo_character{
+  height: 700px;
+  transition:2s;
+}
+
+.diapo_character input[type=radio]{
+	position: absolute;
+	left: -9999px;
+}
+
+.diapo_character label{
+	cursor:pointer;
+}
+
+.diapo_character ul{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.diapo_character ul li{
+  height: 700px;
+}
+
+.diapo_character ul .slide_diapo {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .8s;
+}
+
+/*slide images, on place les photos cote a cote*/
+
+ul .slide_diapo.image1{
+	left: 0;
+}
+ul .slide_diapo.image2{
+	left: 100%;
+}
+ul .slide_diapo.image3{
+	left: 200%;
+}
+ul .slide_diapo.image4{
+	left: 300%;
+}
+
+#slide1:checked ~ ul .slide_diapo{
+  transform: translatex(0);
+}
+
+#slide2:checked ~ ul .slide_diapo{
+  transform: translatex(-100%);
+}
+
+#slide3:checked ~ ul .slide_diapo{
+  transform: translatex(-200%);
+}
+
+#slide4:checked ~ ul .slide_diapo{
+  transform: translatex(-300%);
+}
+
+/*navigation fleches droite et gauche*/
+.precedent, .suivant{
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+	}
+
+.precedent label, .suivant label{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  height: 50px;
+  width: 0;
+  transform: translate(0,-50%);
+}
+
+.precedent{
+	left: 0;
+}
+
+.suivant{
+	right:50px;
+}
+
+.precedent label:before{
+	content:"\3c";
+	}
+.suivant label:before{
+	content:"\3e";
+}
+
+  /* "3e" and "3c" are unicode*/
+
+.precedent label:before, .suivant label:before{
+  position: absolute;
+  font-family: "bric-a-brac";
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: hsla(0,0%,0%,.3);
+  color: white;
+}
+
+.precedent:hover label:before, .suivant:hover label:before{
+  background: hsla(0,0%,0%,.8);
+}
+
+#slide1:checked ~ .precedent .image4,
+#slide1:checked ~ .suivant .image2,
+
+#slide2:checked ~ .precedent .image1,
+#slide2:checked ~ .suivant .image3,
+
+#slide3:checked ~ .precedent .image2,
+#slide3:checked ~ .suivant .image4,
+
+#slide4:checked ~ .precedent .image3,
+#slide4:checked ~ .suivant .image1
+{
+	opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+#lance-diapo:checked ~ .precedent .image4,
+#lance-diapo:checked ~ .suivant .image2
+{
+  animation: fleche_diapo 12.3s infinite -1s;
+}
+
+#lance-diapo:checked ~ .precedent .image1,
+#lance-diapo:checked ~ .suivant .image3
+{
+  animation: fleche_diapo 12.3s infinite 3.1s;
+}
+
+#lance-diapo:checked ~ .precedent .image2,
+#lance-diapo:checked ~ .suivant .image4
+{
+  animation: fleche_diapo 12.3s infinite 7.2s;
+}
+
+#lance-diapo:checked ~ .precedent .image3,
+#lance-diapo:checked ~ .suivant .image1
+{
+  animation: fleche_diapo 12.3s infinite 11.3;
+}
+
+.slider_focus{
+  max-width: 800px;
+  margin: 0 auto;
+  background-image: url("images/background.jpg");
+}
+
+.slider_focus ul{
+  display: flex;
+  padding:0;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+  margin:0;
+}
+
+.slider_focus ul li{
+  z-index: 1;
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider_focus ul li div.background{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 0;
+  left: 0;
+  top:100%;
+  padding: 0;
+  opacity: 0;
+  transition: all .6s;
+  background-repeat: no-repeat;
+}
+
+.slider_focus ul li:focus-within div{
+  top: 200px;
+  opacity: 1;
+}
+
+div .texte_perso{
+  width: 250px;
+  height: 100%;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top:0;
+  background-color: rgb(36, 38, 41);
+}
+
+.img_name{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.name{
+  font-size: 30px;
+}
+
+.description{
+  font-size: 18px;
+  margin: 10px;
+  color: white;
+}
+
+.special{
+  background-color: rgb(66,68,72);
+  width: 10%;
+  height:10%;
+}
+
+.logo{
+  width: 105px;
+  height: 105px;
+}
+
+.background{
+  width: 600px;
+  height: 700px;
+}
+
+.osa{
+  background-image: url("images/background_agents/r6s-operator-osa.png");
+}
+.thunderbird{
+  background-image: url("images/background_agents/r6s-operator-thunderbird.png");
+}
+.flores{
+  background-image: url("images/background_agents/r6s-operator-flores.png");
+}
+.aruni{
+  background-image: url("images/background_agents/r6s-operator-aruni.png");
+}
+.zero{
+  background-image: url("images/background_agents/r6s-operator-zero.png");
+}
+.ace{
+  background-image: url("images/background_agents/r6-operator-ace.png");
+}
+.melusi{
+  background-image: url("images/background_agents/r6s-operator-melusi.png");
+}
+.oryx{
+  background-image: url("images/background_agents/r6s-operator-oryx.png");
+}
+.iana{
+  background-image: url("images/background_agents/r6s-operator-iana.png");
+}
+.wamai{
+  background-image: url("images/background_agents/r6-operator-wamai.png");
+}
+.kali{
+  background-image: url("images/background_agents/r6-operator-kali.png");
+}
+.amaru{
+  background-image: url("images/background_agents/R6-operator-amaru.png");
+}
+.goyo{
+  background-image: url("images/background_agents/R6-operator-goyo.png");
+}
+.nokk{
+  background-image: url("images/background_agents/R6-operator-nokk.png");
+}
+.warden{
+  background-image: url("images/background_agents/R6-operator-warden.png");
+}
+
+@keyframes fleche_diapo {
+  0%,33.33%{
+    opacity: 1;
+    z-index: 0;
+  }
+  33.34%,100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.sorry{
+  align-items: center;
+  color: var(--gray);
+  font-size: 35px;
+}
+
+.map{
+  width: 800px;
+  height: 88px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.map:focus-within{
+    height: 538px;
+    transition: 0.5s;
+}
+
+.map ul{
+  display: flex;
+  padding:0;
+  width: 800px;
+  height: 538px;
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+  margin:0;
+}
+
+.map ul li{
+  z-index: 1;
+  width: 200px;
+  height: 88px;
+  overflow: hidden;
+}
+
+.map ul li div.background-map{
+  position: absolute;
+  width:800px;
+  height: 600px;
+  z-index: 0;
+  left: 0;
+  top:100%;
+  padding: 0;
+  opacity: 0;
+  transition: all .6s;
+  background-repeat: no-repeat;
+}
+
+.map ul li:focus-within div {
+  top: 87px;
+  opacity: 1;
+}
+
+.map-bank{
+  background-image: url("images/map/bank.jpg");
+}
+.map-border{
+  background-image: url("images/map/border.jpg");
+}
+.map-chalet{
+  background-image: url("images/map/chalet.jpg");
+}
+.map-clubhouse{
+  background-image: url("images/map/clubhouse.jpg");
+}
+.map-coastline{
+  background-image: url("images/map/coastline.jpg");
+}
+.map-consulate{
+  background-image: url("images/map/consulate.jpg");
+}
+.map-favela{
+  background-image: url("images/map/favela.jpg");
+}
+.map-fortress{
+  background-image: url("images/map/fortress.jpg");
+}
+
+
+
+
 
 .r6_season{
   margin-top: 100px;
   height: 920px;
-  background-image: url("images/r6_season.jpg");
+  background-image: url("images/bg_r6_season.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -367,16 +771,16 @@ ul .slide_diapo.image3{
 }
 
 .r6_season h2{
-  padding-top: 100px;
-  padding-bottom: 30px;
-  color: var(--blue);
+  color: var(--gray);
+  border: solid;
+  border-color: var(--blue);
+  padding: 5px;
+  font-size: 300%;
   text-align: center;
-  font-size: 60px;
-  margin: 0;
+  margin-top: 70px;
 }
 
 .r6_season h3{
-  background-color: var(--blue);
   width: 500px;
   padding: 5px;
   color: var(--gray);
@@ -423,7 +827,7 @@ ul .slide_diapo.image3{
 
 
 footer{
-  background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(57,57,57,1) 59%, rgba(190,190,190,1) 100%);
+  margin-top: 100px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
