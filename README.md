@@ -1,2 +1,5 @@
 # gtech1-b14-projet3
-TEST ATOM
+website by :
+Caroumbin Hugo
+Bielski Aleksi
+Duc Jérémy
